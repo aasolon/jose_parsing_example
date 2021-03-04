@@ -12,7 +12,7 @@ import javax.validation.Valid;
 
 /**
  * Контроллер для документа, по которому разрешены запросы с любыми форматами, т.е. с всевозможными комбинациями
- * заголовков Content-Type и Accept
+ * заголовков Content-Type и Accept. Отличный пример как можно компактно, используя всего лишь один метод, покрыть все потребности
  */
 @JweAllowed
 @RestController
@@ -28,7 +28,7 @@ public class JweAllowedDocumentController {
     // !!! Осторожно !!!
     // если пользователь не пришлет Content-Type, то выкинется ошибка 415, тут все ок,
     // но с produces работает по-другому: если пользователь не пришлет Accept, то ответ будет сформирован в формате,
-    // идущем первым в списке produces (подробнее см. javadoc по produces)
+    // идущем ПЕРВЫМ в списке produces (подробнее см. javadoc по produces)
     @PostMapping(value = "/create", consumes = {"application/json", "application/jose"}, produces = {"application/json", "application/jose"})
     public Document createDocument(@Valid  @RequestBody Document document) {
         return documentService.create(document);
