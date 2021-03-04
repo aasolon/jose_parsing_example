@@ -1,7 +1,7 @@
 # Обычный запрос с JSON
 POST http://localhost:8080/simple-document/create
 Content-Type: application/json
-Accept: application/jose
+#Accept: application/jose
 
 {
   "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
@@ -16,7 +16,7 @@ Accept: application/jose
 # Запрос с JWS
 POST http://localhost:8080/simple-document/create
 Content-Type: application/jose
-Accept: application/jose
+#Accept: application/jose
 
 #{
 #  "typ": "JOSE",
@@ -33,3 +33,25 @@ Accept: application/jose
 ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
 ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
 YXNk
+
+
+
+###
+# Запрос с JWE
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+#Accept: application/jose
+
+#{
+#  "typ": "JOSE",
+#  "alg": "DIR",
+#  "enc": "gost28147-89"
+#}
+#ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MjgxNDctODkiLAogICJraWQiOiAiMTNiYzA5N2EtYTIwYi00ZTYyLWFiYTMtZmU3MzI1M2YxN2U4Igp9.
+#ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+#YXNk
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJESVIiLAogICJlbmMiOiAiZ29zdDI4MTQ3LTg5Igp9
+...
+ZXdvZ0lDSjBlWEFpT2lBaVNrOVRSU0lzQ2lBZ0ltRnNaeUk2SUNKbmIzTjBNamd4TkRjdE9Ea2lMQW9nSUNKcmFXUWlPaUFpTVROaVl6QTVOMkV0WVRJd1lpMDBaVFl5TFdGaVlUTXRabVUzTXpJMU0yWXhOMlU0SWdwOS4KZXdvZ0lDSmxlSFJsY201aGJFbGtJam9nSW1JNVpXVXpZalF5TFRoaFkyUXROR1U0T0MxaVpqUTRMVGhpTWpOaU1ERTNaak5sWlNJc0NpQWdJbVJ2WTA1MWJXSmxjaUk2SUNKVFFrSXRPVGczSWl3S0lDQWlZVzF2ZFc1MElqb2dPVEV6TEFvZ0lDSjFibXR1YjNkdVVISnZjR1Z5ZEhraU9pQWlhWFJmWTJobFkydHpYMmxtWDI5aWFtVmpkRjl0WVhCd1pYSmZabUZwYkY5dmJsOWtaWE5sY21saGJHbDZaU0lLZlEuCllYTms
+.

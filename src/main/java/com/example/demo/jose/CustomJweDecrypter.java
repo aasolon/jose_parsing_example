@@ -9,7 +9,6 @@ import com.nimbusds.jose.JWEHeader;
 import com.nimbusds.jose.jca.JWEJCAContext;
 import com.nimbusds.jose.util.Base64URL;
 
-import java.nio.charset.StandardCharsets;
 import java.util.Set;
 
 public class CustomJweDecrypter implements JWEDecrypter {

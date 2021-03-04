@@ -16,7 +16,7 @@ Content-Type: application/json
 # Запрос с JWS
 POST http://localhost:8080/jwe-allowed-document/create
 Content-Type: application/jose
-Accept: application/jose
+#Accept: application/jose
 
 #{
 #  "typ": "JOSE",

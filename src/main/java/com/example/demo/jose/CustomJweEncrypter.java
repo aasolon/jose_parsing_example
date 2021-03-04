@@ -3,7 +3,6 @@ package com.example.demo.jose;
 import com.example.demo.service.CryptoService;
 import com.google.common.collect.ImmutableSet;
 import com.nimbusds.jose.EncryptionMethod;
-import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.JWEAlgorithm;
 import com.nimbusds.jose.JWECryptoParts;
 import com.nimbusds.jose.JWEEncrypter;

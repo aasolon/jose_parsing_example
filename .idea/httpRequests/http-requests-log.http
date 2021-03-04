@@ -1,0 +1,656 @@
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+<> 2021-03-04T081628.200.json
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+<> 2021-03-04T081621.200.json
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/json
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/json
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T081611.200.json
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T081603.400.txt
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJESVIiLAogICJlbmMiOiAiZ29zdDI4MTQ3LTg5Igp9
+...
+ZXdvZ0lDSjBlWEFpT2lBaVNrOVRSU0lzQ2lBZ0ltRnNaeUk2SUNKbmIzTjBNamd4TkRjdE9Ea2lMQW9nSUNKcmFXUWlPaUFpTVROaVl6QTVOMkV0WVRJd1lpMDBaVFl5TFdGaVlUTXRabVUzTXpJMU0yWXhOMlU0SWdwOS4KZXdvZ0lDSmxlSFJsY201aGJFbGtJam9nSW1JNVpXVXpZalF5TFRoaFkyUXROR1U0T0MxaVpqUTRMVGhpTWpOaU1ERTNaak5sWlNJc0NpQWdJbVJ2WTA1MWJXSmxjaUk2SUNKVFFrSXRPVGczSWl3S0lDQWlZVzF2ZFc1MElqb2dPVEV6TEFvZ0lDSjFibXR1YjNkdVVISnZjR1Z5ZEhraU9pQWlhWFJmWTJobFkydHpYMmxtWDI5aWFtVmpkRjl0WVhCd1pYSmZabUZwYkY5dmJsOWtaWE5sY21saGJHbDZaU0lLZlEuCllYTms
+.
+
+<> 2021-03-04T080753.400.txt
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJESVIiLAogICJlbmMiOiAiZ29zdDI4MTQ3LTg5Igp9
+...
+ZXdvZ0lDSjBlWEFpT2lBaVNrOVRSU0lzQ2lBZ0ltRnNaeUk2SUNKbmIzTjBNamd4TkRjdE9Ea2lMQW9nSUNKcmFXUWlPaUFpTVROaVl6QTVOMkV0WVRJd1lpMDBaVFl5TFdGaVlUTXRabVUzTXpJMU0yWXhOMlU0SWdwOS4KZXdvZ0lDSmxlSFJsY201aGJFbGtJam9nSW1JNVpXVXpZalF5TFRoaFkyUXROR1U0T0MxaVpqUTRMVGhpTWpOaU1ERTNaak5sWlNJc0NpQWdJbVJ2WTA1MWJXSmxjaUk2SUNKVFFrSXRPVGczSWl3S0lDQWlZVzF2ZFc1MElqb2dPVEV6TEFvZ0lDSjFibXR1YjNkdVVISnZjR1Z5ZEhraU9pQWlhWFJmWTJobFkydHpYMmxtWDI5aWFtVmpkRjl0WVhCd1pYSmZabUZwYkY5dmJsOWtaWE5sY21saGJHbDZaU0lLZlEuCllYTms
+.
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJESVIiLAogICJlbmMiOiAiZ29zdDI4MTQ3LTg5Igp9
+...
+ZXdvZ0lDSjBlWEFpT2lBaVNrOVRSU0lzQ2lBZ0ltRnNaeUk2SUNKbmIzTjBNamd4TkRjdE9Ea2lMQW9nSUNKcmFXUWlPaUFpTVROaVl6QTVOMkV0WVRJd1lpMDBaVFl5TFdGaVlUTXRabVUzTXpJMU0yWXhOMlU0SWdwOS4KZXdvZ0lDSmxlSFJsY201aGJFbGtJam9nSW1JNVpXVXpZalF5TFRoaFkyUXROR1U0T0MxaVpqUTRMVGhpTWpOaU1ERTNaak5sWlNJc0NpQWdJbVJ2WTA1MWJXSmxjaUk2SUNKVFFrSXRPVGczSWl3S0lDQWlZVzF2ZFc1MElqb2dPVEV6TEFvZ0lDSjFibXR1YjNkdVVISnZjR1Z5ZEhraU9pQWlhWFJmWTJobFkydHpYMmxtWDI5aWFtVmpkRjl0WVhCd1pYSmZabUZwYkY5dmJsOWtaWE5sY21saGJHbDZaU0lLZlEuCllYTms
+.
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/json
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/json
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T064407.200.json
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T064403.200.json
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/json
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/json
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T064339.200.txt
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/json
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T064316.200.txt
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+<> 2021-03-04T064311.200.txt
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/json
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T064306.200.txt
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T064236.500.txt
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T064216.500.txt
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T064131.500.txt
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T064118.500.txt
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/json
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T064109.200.txt
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+<> 2021-03-04T064051.200.txt
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+<> 2021-03-04T064029.200.json
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+<> 2021-03-04T064019.200.txt
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/json
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T064009.200.json
+
+###
+
+POST http://localhost:8080/simple-document/create
+Content-Type: application/json
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T063919.200.txt
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJESVIiLAogICJlbmMiOiAiZ29zdDI4MTQ3LTg5Igp9
+...
+ZXdvZ0lDSjBlWEFpT2lBaVNrOVRSU0lzQ2lBZ0ltRnNaeUk2SUNKbmIzTjBNamd4TkRjdE9Ea2lMQW9nSUNKcmFXUWlPaUFpTVROaVl6QTVOMkV0WVRJd1lpMDBaVFl5TFdGaVlUTXRabVUzTXpJMU0yWXhOMlU0SWdwOS4KZXdvZ0lDSmxlSFJsY201aGJFbGtJam9nSW1JNVpXVXpZalF5TFRoaFkyUXROR1U0T0MxaVpqUTRMVGhpTWpOaU1ERTNaak5sWlNJc0NpQWdJbVJ2WTA1MWJXSmxjaUk2SUNKVFFrSXRPVGczSWl3S0lDQWlZVzF2ZFc1MElqb2dPVEV6TEFvZ0lDSjFibXR1YjNkdVVISnZjR1Z5ZEhraU9pQWlhWFJmWTJobFkydHpYMmxtWDI5aWFtVmpkRjl0WVhCd1pYSmZabUZwYkY5dmJsOWtaWE5sY21saGJHbDZaU0lLZlEuCllYTms
+.
+
+<> 2021-03-04T063909.200.txt
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJESVIiLAogICJlbmMiOiAiZ29zdDI4MTQ3LTg5Igp9
+...
+ZXdvZ0lDSjBlWEFpT2lBaVNrOVRSU0lzQ2lBZ0ltRnNaeUk2SUNKbmIzTjBNamd4TkRjdE9Ea2lMQW9nSUNKcmFXUWlPaUFpTVROaVl6QTVOMkV0WVRJd1lpMDBaVFl5TFdGaVlUTXRabVUzTXpJMU0yWXhOMlU0SWdwOS4KZXdvZ0lDSmxlSFJsY201aGJFbGtJam9nSW1JNVpXVXpZalF5TFRoaFkyUXROR1U0T0MxaVpqUTRMVGhpTWpOaU1ERTNaak5sWlNJc0NpQWdJbVJ2WTA1MWJXSmxjaUk2SUNKVFFrSXRPVGczSWl3S0lDQWlZVzF2ZFc1MElqb2dPVEV6TEFvZ0lDSjFibXR1YjNkdVVISnZjR1Z5ZEhraU9pQWlhWFJmWTJobFkydHpYMmxtWDI5aWFtVmpkRjl0WVhCd1pYSmZabUZwYkY5dmJsOWtaWE5sY21saGJHbDZaU0lLZlEuCllYTms
+.
+
+<> 2021-03-04T063906.400.txt
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+<> 2021-03-04T063859.400.txt
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T063856.400.txt
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T063848.400.txt
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+<> 2021-03-04T055834.200.txt
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/jose
+Accept: */*
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+<> 2021-03-04T055823.200.json
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/jose
+Accept: text/json
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/jose
+Accept: application/jose1
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T055745.200.txt
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+Accept: application/jose1
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T055256.200.txt
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T054928.200.json
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T054853.200.json
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T054704.200.json
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T054521.200.json
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T054410.200.json
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T054350.200.txt
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T054328.200.txt
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/json
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+<> 2021-03-04T054320.200.json
+
+###
+
+POST http://localhost:8080/jwe-allowed-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
+
+<> 2021-03-04T054155.200.txt
+
+###
+
