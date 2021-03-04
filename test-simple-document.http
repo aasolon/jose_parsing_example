@@ -1,0 +1,35 @@
+# Обычный запрос с JSON
+POST http://localhost:8080/simple-document/create
+Content-Type: application/json
+Accept: application/jose
+
+{
+  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+  "docNumber": "SBB-987",
+  "amount": 913,
+  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+}
+
+
+
+###
+# Запрос с JWS
+POST http://localhost:8080/simple-document/create
+Content-Type: application/jose
+Accept: application/jose
+
+#{
+#  "typ": "JOSE",
+#  "alg": "gost34.10-2012",
+#  "kid": "13bc097a-a20b-4e62-aba3-fe73253f17e8"
+#}
+#{
+#  "externalId": "b9ee3b42-8acd-4e88-bf48-8b23b017f3ee",
+#  "docNumber": "SBB-987",
+#  "amount": 913,
+#  "unknownProperty": "it_checks_if_object_mapper_fail_on_deserialize"
+#}
+
+ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJnb3N0MzQuMTAtMjAxMiIsCiAgImtpZCI6ICIxM2JjMDk3YS1hMjBiLTRlNjItYWJhMy1mZTczMjUzZjE3ZTgiCn0.
+ewogICJleHRlcm5hbElkIjogImI5ZWUzYjQyLThhY2QtNGU4OC1iZjQ4LThiMjNiMDE3ZjNlZSIsCiAgImRvY051bWJlciI6ICJTQkItOTg3IiwKICAiYW1vdW50IjogOTEzLAogICJ1bmtub3duUHJvcGVydHkiOiAiaXRfY2hlY2tzX2lmX29iamVjdF9tYXBwZXJfZmFpbF9vbl9kZXNlcmlhbGl6ZSIKfQ.
+YXNk
