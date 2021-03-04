@@ -8,4 +8,8 @@ import com.example.demo.rest.model.Document;
 public interface DocumentService {
 
     Document create(Document document);
+
+    Document getDocument(String guid);
+
+    String getStatus(String guid);
 }

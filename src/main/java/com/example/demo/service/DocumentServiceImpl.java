@@ -15,4 +15,20 @@ public class DocumentServiceImpl implements DocumentService {
 
         return document;
     }
+
+    @Override
+    public Document getDocument(String guid) {
+
+        // тут получение документа из БД
+
+        return new Document();
+    }
+
+    @Override
+    public String getStatus(String guid) {
+
+        // тут получение документа из БД
+
+        return "NEW";
+    }
 }

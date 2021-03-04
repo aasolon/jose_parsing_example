@@ -2,13 +2,13 @@ package com.example.demo.webconfig;
 
 public class CallContext {
 
-    private boolean onlyJweAllowed;
+    private boolean jweRequired;
 
-    public boolean isOnlyJweAllowed() {
-        return onlyJweAllowed;
+    public boolean isJweRequired() {
+        return jweRequired;
     }
 
-    public void setOnlyJweAllowed(boolean onlyJweAllowed) {
-        this.onlyJweAllowed = onlyJweAllowed;
+    public void setJweRequired(boolean jweRequired) {
+        this.jweRequired = jweRequired;
     }
 }

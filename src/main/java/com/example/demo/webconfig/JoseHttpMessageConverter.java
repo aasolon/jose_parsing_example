@@ -56,15 +56,15 @@ public class JoseHttpMessageConverter extends MappingJackson2HttpMessageConverte
             JOSEObject joseObject = JOSEObject.parse(joseContent);
 
 
-            boolean onlyJweAllowed = CallContextHolder.getCallContext().isOnlyJweAllowed();
+            boolean onlyJweAllowed = CallContextHolder.getCallContext().isJweRequired();
             if (joseObject instanceof JWEObject) {
                 if (!onlyJweAllowed) {
-                    throw new BadRequestException("Запрещено присылать запрос в формате JWE");
+                    throw new BadRequestException("Данный запрос имеет формат JWE. Запрещено присылать запрос в формате JWE");
                 }
                 return readJwe((JWEObject) joseObject, type, contextClass, inputMessage);
             } else if (joseObject instanceof JWSObject) {
                 if (onlyJweAllowed) {
-                    throw new BadRequestException("Разрешено присылать запрос только в формате JWE");
+                    throw new BadRequestException("Данный запрос имеет формат JWS. Разрешено присылать запрос только в формате JWE");
                 }
                 return readJws((JWSObject) joseObject, type, contextClass, inputMessage);
             } else {
@@ -88,7 +88,7 @@ public class JoseHttpMessageConverter extends MappingJackson2HttpMessageConverte
             String payload = byteArrayOutputStream.toString(StandardCharsets.UTF_8.name());
 
             String serializedJose = asJws(payload);
-            boolean onlyJweAllowed = CallContextHolder.getCallContext().isOnlyJweAllowed();
+            boolean onlyJweAllowed = CallContextHolder.getCallContext().isJweRequired();
             if (onlyJweAllowed) {
                 serializedJose = asJwe(serializedJose);
             }

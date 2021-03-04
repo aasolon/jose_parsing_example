@@ -23,12 +23,12 @@ public class CustomHandlerInterceptor implements HandlerInterceptor {
                 HandlerMethod handlerMethod = (HandlerMethod) handler;
                 CallContext callContext = new CallContext();
                 boolean needTechEncryption = configurationService.isNeedTechEncryption(); // тут удаленный JSON-RPC вызов или локальный вызов сервиса
-                if (needTechEncryption && handlerMethod.getMethod().getDeclaringClass().isAnnotationPresent(JweAllowed.class)) {
-                    if (request.getContentType() == null || !request.getContentType().startsWith("application/jose") ||
-                            request.getHeader("Accept") == null || !request.getHeader("Accept").startsWith("application/jose")) {
-                        throw new BadRequestException("В соответствии с текущими настройками необходимо отправлять запрос и запрашивать ответ только в формате JWE");
+                JweRequired jweRequiredAnnotation = handlerMethod.getMethod().getAnnotation(JweRequired.class);
+                if (needTechEncryption && jweRequiredAnnotation != null) {
+                    if (!isJoseContentTypeHeader(request, jweRequiredAnnotation) || !isJoseAcceptHeader(request, jweRequiredAnnotation)) {
+                        throw new BadRequestException("Заголовок Content-Type и/или заголовок Accept должен быть равен application/jose");
                     }
-                    callContext.setOnlyJweAllowed(true);
+                    callContext.setJweRequired(true);
                 }
                 CallContextHolder.setCallContext(callContext);
             }
@@ -42,5 +42,13 @@ public class CustomHandlerInterceptor implements HandlerInterceptor {
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
         CallContextHolder.resetCallContext();
+    }
+
+    private boolean isJoseContentTypeHeader(HttpServletRequest request, JweRequired jweRequiredAnnotation) {
+        return !jweRequiredAnnotation.jweConsumes() || request.getContentType() != null && request.getContentType().startsWith("application/jose");
+    }
+
+    private boolean isJoseAcceptHeader(HttpServletRequest request, JweRequired jweRequiredAnnotation) {
+        return !jweRequiredAnnotation.jweProduces() || request.getHeader("Accept") != null && request.getHeader("Accept").startsWith("application/jose");
     }
 }

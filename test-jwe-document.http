@@ -1,5 +1,6 @@
-# Обычный запрос с JSON
-POST http://localhost:8080/jwe-allowed-document/create
+# JSON в теле запроса
+POST http://localhost:8080/jwe-document/create
+#POST http://localhost:8080/jwe-document/create-without-return
 Content-Type: application/json
 #Accept: application/jose
 
@@ -13,8 +14,9 @@ Content-Type: application/json
 
 
 ###
-# Запрос с JWS
-POST http://localhost:8080/jwe-allowed-document/create
+# JWS в теле запроса
+POST http://localhost:8080/jwe-document/create
+#POST http://localhost:8080/jwe-document/create-without-return
 Content-Type: application/jose
 #Accept: application/jose
 
@@ -37,8 +39,9 @@ YXNk
 
 
 ###
-# Запрос с JWE
-POST http://localhost:8080/jwe-allowed-document/create
+# JWE в теле запроса
+POST http://localhost:8080/jwe-document/create
+#POST http://localhost:8080/jwe-document/create-without-return
 Content-Type: application/jose
 Accept: application/jose
 
@@ -55,3 +58,16 @@ ewogICJ0eXAiOiAiSk9TRSIsCiAgImFsZyI6ICJESVIiLAogICJlbmMiOiAiZ29zdDI4MTQ3LTg5Igp9
 ...
 ZXdvZ0lDSjBlWEFpT2lBaVNrOVRSU0lzQ2lBZ0ltRnNaeUk2SUNKbmIzTjBNamd4TkRjdE9Ea2lMQW9nSUNKcmFXUWlPaUFpTVROaVl6QTVOMkV0WVRJd1lpMDBaVFl5TFdGaVlUTXRabVUzTXpJMU0yWXhOMlU0SWdwOS4KZXdvZ0lDSmxlSFJsY201aGJFbGtJam9nSW1JNVpXVXpZalF5TFRoaFkyUXROR1U0T0MxaVpqUTRMVGhpTWpOaU1ERTNaak5sWlNJc0NpQWdJbVJ2WTA1MWJXSmxjaUk2SUNKVFFrSXRPVGczSWl3S0lDQWlZVzF2ZFc1MElqb2dPVEV6TEFvZ0lDSjFibXR1YjNkdVVISnZjR1Z5ZEhraU9pQWlhWFJmWTJobFkydHpYMmxtWDI5aWFtVmpkRjl0WVhCd1pYSmZabUZwYkY5dmJsOWtaWE5sY21saGJHbDZaU0lLZlEuCllYTms
 .
+
+
+
+###
+# Получение документа по guid
+GET http://localhost:8080/jwe-document/abcd3b42-8acd-4e88-bf48-8b23b017f3ee
+Accept: application/jose
+
+
+
+###
+# Получение статуса документа по guid
+GET http://localhost:8080/jwe-document/abcd3b42-8acd-4e88-bf48-8b23b017f3ee/status
